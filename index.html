@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <form class="bg-white p-3 border rounded-2" onsubmit="event.preventDefault(); validateForm() ">
+      <div class="contactUs ">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="mb-3">
+          <label for="name" class="form-label my-3 d-block">Name:</label>
+          <input type="text" class="form-control " id="name" placeholder="Your Name">
+          <small class="error text-danger"></small>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label my-3 d-block">Email address:</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+          <small class="error text-danger"></small>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label my-3 d-block">Message:</label>
+          <textarea id="message" class="form-control" placeholder="Your Message" rows="4" cols="60"></textarea>
+          <small class="error text-danger"></small>
+        </div>
+        <div class="button text-center">
+          <input type="submit" value="Send Message" class="btn btn-success">
+          <p id="success" class="text-info"></p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

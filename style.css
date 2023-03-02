@@ -1,0 +1,26 @@
+body
+{
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+form
+{
+    max-width: 550px;
+    width: 90%;
+    margin: 3vh auto 0 auto;
+}
+textarea
+{
+    resize: none;
+}
+.error-border{
+    border-bottom: 1px solid red;
+}
